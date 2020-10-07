@@ -10,7 +10,7 @@ def hello_world():
 @app.route('/time')
 def time():
     now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
+    current_time = now.strftime("%d.%m.%y %H:%M:%S")
     return current_time
 
 @app.route('/version')
