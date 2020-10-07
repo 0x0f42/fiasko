@@ -10,3 +10,8 @@ If no venv: `python3 -m venv venv`
 Activate: `. venv/bin/activate`
 
 Install Flask if needed: `pip install Flask`
+
+Don't forget to `export FLASK_APP=app.py`
+
+## Run
+`flask run` or `python app.py`
