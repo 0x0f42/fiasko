@@ -14,5 +14,5 @@ def time():
     return current_time
 
 @app.route('/version')
-def time():
+def version():
     return {"version": 2}
