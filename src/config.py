@@ -5,5 +5,7 @@ class ProdConfig(Config):
     pass
 
 class DevConfig(Config):
-    DEBUG=True
+    DEBUG = True
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///fiasko.db'
+    SQLALCHEMY_ECHO = True
 
