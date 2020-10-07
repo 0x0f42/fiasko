@@ -16,3 +16,5 @@ def time():
 @app.route('/version')
 def version():
     return {"version": 2}
+
+app.run(debug=True)
