@@ -11,7 +11,15 @@ Activate: `. venv/bin/activate`
 
 Install Flask if needed: `pip install Flask`
 
-Don't forget to `export FLASK_APP=app.py`
+Don't forget to `export FLASK_APP=src/app.py`
 
 ## Run
 `flask run` or `python app.py`
+
+## DB
+`export FLASK_APP=src/manage.py`
+`flask shell` -> 
+
+```py
+db.create_all()
+```
