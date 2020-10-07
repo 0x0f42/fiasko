@@ -16,3 +16,6 @@ def time():
 @app.route('/version')
 def version():
     return {"version": 2}
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
