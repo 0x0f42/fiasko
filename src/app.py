@@ -23,7 +23,7 @@ def time():
 
 @app.route('/version')
 def version():
-    return {"version": 2}, 203
+    return {"version": 3}, 200
 
 
 @app.route('/users')
