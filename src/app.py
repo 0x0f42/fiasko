@@ -1,5 +1,5 @@
 from functools import reduce
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from config import DevConfig
@@ -17,7 +17,11 @@ def hello_world():
 @app.route('/time')
 def time():
     now = datetime.now()
-    current_time = now.strftime("%d.%m.%y %H:%M:%S")
+    short = request.args.get('short')
+    if short is 'yes' or short is 'y' or short is '1':
+        current_time = now.strftime("%d.%m.%y")
+    else:
+        current_time = now.strftime("%d.%m.%y %H:%M:%S")
     return {"time":current_time}, 200
 
 
