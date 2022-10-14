@@ -17,8 +17,12 @@ Don't forget to `export FLASK_APP=src/app.py`
 `flask run` or `python app.py`
 
 ## DB
-`export FLASK_APP=src/manage.py`
-`flask shell` -> 
+```console
+export FLASK_APP=src/manage.py
+flask shell
+
+# then type:
+```
 
 ```py
 db.create_all()
