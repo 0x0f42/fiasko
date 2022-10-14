@@ -17,7 +17,7 @@ Don't forget to `export FLASK_APP=src/app.py`
 `flask run` or `python app.py`
 
 ## DB
-```console
+```bash
 export FLASK_APP=src/manage.py
 flask shell
 
