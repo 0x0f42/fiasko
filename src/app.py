@@ -18,7 +18,7 @@ def hello_world():
 def time():
     now = datetime.now()
     short = request.args.get('short')
-    current_time = now.strftime("%d.%m.%y") if short is 'yes' or short is 'y' or short is '1' else now.strftime("%d.%m.%y %H:%M:%S")
+    current_time = now.strftime("%d.%m.%y") if short == 'yes' or short == 'y' or short is '1' else now.strftime("%d.%m.%y %H:%M:%S")
     return {"time":current_time}, 200
 
 
