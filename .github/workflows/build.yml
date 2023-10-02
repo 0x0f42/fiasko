@@ -3,6 +3,9 @@ name: Build
 on:
   pull_request:
   push: 
+    branches:
+      - main
+      - patch-*
 
 jobs:
   build:
