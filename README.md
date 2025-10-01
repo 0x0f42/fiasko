@@ -20,9 +20,9 @@ Don't forget to `export FLASK_APP=src/app.py`
 ```bash
 export FLASK_APP=src/manage.py
 flask shell
-
-# then type:
 ```
+
+then type:
 
 ```py
 db.create_all()
