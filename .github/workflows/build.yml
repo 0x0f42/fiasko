@@ -1,4 +1,4 @@
-name: Build
+name: Verify Action Run
 
 on:
   pull_request:
