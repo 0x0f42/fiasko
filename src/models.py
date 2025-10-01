@@ -9,8 +9,9 @@ class User(db.Model):
     password = db.Column(db.String(255))
     role = db.Column(db.String(255))
 
-    def __init__(self, username):
+    def __init__(self, username, role):
         self.username = username
+        self.role = role
 
     def __repr__(self):
         return "<User '{}' with role '{}'>".format(self.username, self.role)
