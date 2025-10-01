@@ -2,7 +2,7 @@ from app import db
 
 
 class User(db.Model):
-    __tablename__ = 'user_table'
+    __tablename__ = 'users'
 
     id = db.Column(db.Integer(), primary_key=True)
     username = db.Column(db.String(255))
@@ -17,7 +17,7 @@ class User(db.Model):
         return "<User '{}' with role '{}'>".format(self.username, self.role)
 
 class Room(db.Model):
-    __tablename__ == 'room_table'
+    __tablename__ == 'rooms'
 
     id = db.Column(db.Integer(), primary_key=True)
     room_number = db.Column(db.Integer())
